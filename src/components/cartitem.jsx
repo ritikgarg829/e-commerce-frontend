@@ -8,7 +8,7 @@ const cartitem = ({ cartitems, incrementHandler, decrementhandler, removeHandler
     const { productid, name, photo, quantity, price } = cartitems
     return (
         <div className="cartitem">
-            <img src={`${photo}`} alt={name} />
+            <img src={`${server}/${photo}`} alt={name} />
             <article>
                 <Link to={`product/${productid}`}>{name}</Link>
                 <span>Price: ₹{price}</span>
