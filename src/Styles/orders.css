@@ -1,0 +1,77 @@
+.container {
+    max-width: 1367px;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: xxx-large;
+    font-weight: 700;
+    margin: 1rem 0rem;
+    text-align: left;
+}
+
+.order-view {
+    margin: 20px;
+}
+
+.main {
+    max-height: 300px;
+    overflow: auto;
+
+}
+
+/* Scrollbar Styles */
+.main::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+.main::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the track */
+}
+
+.main::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar handle */
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the scrollbar handle on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.view {
+    background-color: #6aa2dd;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+
+}
+
+.view:hover {
+    color: blue;
+}

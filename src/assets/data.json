@@ -1,0 +1,139 @@
+{
+
+
+  "customer":[
+
+    {
+      "id":"1",
+      "img":"scsc",
+      "name":"laptop",
+       "gender":"male",
+    "email":"bxsnabxamnbxan",
+    "role":"user"
+
+    },
+    
+    
+    {
+      "id":"2",
+      "img":"ddfd",
+    "name":"jeans",
+    "gender":"male",
+    "email":"bxsnabxamnbxan",
+    "role":"user"
+    },
+    
+    {
+      "id":"3",
+      "img":"ssc",
+    "name":"t-shirt",
+    "gender":"male",
+    "email":"bxsnabxamnbxan",
+    "role":"user"
+    },
+    
+    {
+      "id":"4",
+      "img":"sccs",
+    "name":"saree",
+    "gender":"male",
+    "email":"bxsnabxamnbxan",
+    "role":"user"
+    }
+    
+    ],
+    
+
+
+"products":[
+
+{
+  "id":"1",
+  "img":"scsc",
+"name":"laptop",
+"stock":52,
+"price":522222
+},
+
+
+{
+  "id":"2",
+  "img":"ddfd",
+"name":"jeans",
+"stock":51,
+"price":1212222
+},
+
+{
+  "id":"3",
+  "img":"ssc",
+"name":"t-shirt",
+"stock":92,
+"price":1121222
+},
+
+{
+  "id":"4",
+  "img":"sccs",
+"name":"saree",
+"stock":12,
+"price":2352
+}
+
+],
+
+
+
+
+
+    "categories": [
+      {
+        "value": 40,
+        "heading": "Laptops"
+      },
+  
+      {
+        "value": 100,
+        "heading": "Shoes"
+      },
+      {
+        "value": 80,
+        "heading": "Cameras"
+      },
+      {
+        "value": 60,
+        "heading": "Jeans"
+      }
+    ],
+  
+    "transaction": [
+      {
+        "id": "ksdnfkjsdfx",
+        "amount": 4000,
+        "quantity": 4,
+        "discount": 300,
+        "status": "Processing"
+      },
+      {
+        "id": "sdsdssdsd",
+        "amount": 5100,
+        "quantity": 2,
+        "discount": 900,
+        "status": "Processing"
+      },
+      {
+        "id": "sdsdcvsssdsd",
+        "amount": 13000,
+        "quantity": 91,
+        "discount": 0,
+        "status": "Shipped"
+      },
+      {
+        "id": "dfddddfd",
+        "amount": 2300,
+        "quantity": 4,
+        "discount": 2000,
+        "status": "Processing"
+      }
+    ]
+  }

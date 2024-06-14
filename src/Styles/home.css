@@ -1,0 +1,68 @@
+.home {
+    padding-left: 2rem;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.findmore {
+    font-size: 1.5rem;
+    padding-right: 2rem;
+}
+
+.main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 2rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (max-width: 1061px) {
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .findmore {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    .main-heading {
+        font-size: 1.5rem;
+    }
+
+    .findmore {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-heading {
+        font-size: 1.5rem;
+    }
+
+    .findmore {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-heading {
+        font-size: 1.5rem;
+    }
+
+    .findmore {
+        font-size: 0.8rem;
+    }
+}

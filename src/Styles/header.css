@@ -1,0 +1,38 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.home-container {
+    background-image: url("../assets/images/home3.jpg");
+    background-size: cover;
+    height: 650px;
+
+
+
+    /* Default height for larger screens */
+
+
+    @media only screen and (max-width: 1061px) {
+        height: 600px;
+        /* Adjust height for even smaller screens */
+    }
+
+    @media only screen and (max-width: 915px) {
+        height: 500px;
+        /* Adjust height for even smaller screens */
+    }
+
+    /* Media query for smaller screens */
+    @media only screen and (max-width: 768px) {
+        height: 350px;
+        /* Adjust height for smaller screens */
+    }
+
+    /* Media query for even smaller screens */
+    @media only screen and (max-width: 576px) {
+        height: 200px;
+        /* Adjust height for even smaller screens */
+    }
+}

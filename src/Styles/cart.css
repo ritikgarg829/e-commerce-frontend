@@ -1,0 +1,170 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.cart {
+    display: flex;
+    padding: 4rem 6rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    height: calc(100vh - 4rem);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Scrollbar Styles */
+main::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+main::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the track */
+}
+
+main::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar handle */
+}
+
+main::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the scrollbar handle on hover */
+}
+
+p {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+aside {
+    padding: 4rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+
+}
+
+aside>input {
+    width: 15rem;
+    padding: 1rem;
+    margin: auto;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.coupon {
+    margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+aside>a {
+    margin-top: 1rem;
+    background-color: rgb(149, 149, 235);
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    justify-content: center;
+
+
+}
+
+h1 {
+    margin-top: 1rem;
+    background-color: rgb(118, 115, 115);
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+
+
+
+/* -------------------------------------------------------------------- */
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .cart {
+
+        flex-direction: column;
+        height: 120vh;
+        margin-top: -5rem;
+
+    }
+
+    aside {
+        padding: 0%;
+        width: 14rem;
+        gap: 1px;
+        margin-bottom: 6rem;
+
+
+    }
+
+    main {
+        position: relative;
+        right: 2rem;
+        width: 70vw;
+        /* background-color: blue; */
+        height: calc(100vw - 10px);
+    }
+
+
+}
+
+/* Media query for even smaller screens */
+@media only screen and (max-width: 576px) {
+    .cart {
+        height: 120vh;
+        flex-direction: column;
+        margin-top: -5rem;
+
+    }
+
+    aside {
+        padding: 0%;
+        width: 14rem;
+        gap: 1px;
+        margin-bottom: 6rem;
+
+
+    }
+
+    main {
+        position: relative;
+        right: 2rem;
+        width: 70vw;
+        height: calc(100vw - 10px);
+    }
+
+
+
+}

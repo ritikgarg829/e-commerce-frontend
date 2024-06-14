@@ -1,0 +1,377 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.heading {
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    background-color: inherit;
+    border: none;
+    outline: none;
+
+}
+
+poscenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+hw {
+    height: 1rem;
+    width: 1rem;
+} */
+
+
+
+.adminContainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem;
+    height: 100vh;
+    position: fixed;
+}
+
+.dashboard {
+    overflow-y: auto;
+
+}
+
+.dashboard::-webkit-scrollbar {
+    display: none;
+}
+
+.bar {
+    width: 64rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+}
+
+input {
+    margin-right: auto;
+    width: 52rem;
+    margin-top: 8px;
+    margin-left: 3rem;
+    padding: 1rem 1rem;
+    border: none;
+    outline: none;
+}
+
+.widgetContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 2rem 2rem 2rem 0;
+}
+
+.widget {
+    min-width: 16rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.132);
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0rem;
+    border-radius: 10px;
+}
+
+.widget-info>p {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.widget-info>h4 {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.widget-info>span {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.widgetCircle {
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: aqua;
+    flex: none;
+    margin-left: 1rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        background-color: white;
+        border-radius: 100%;
+    }
+}
+
+.widgetCircle>span {
+    position: relative;
+}
+
+
+.graphContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    align-items: unset;
+    gap: 2rem;
+    padding: 0 2rem 2rem 0;
+
+}
+
+
+
+.revenue-chart {
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.132);
+    border-radius: 10px;
+}
+
+.chart-heading {
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 0 2rem 0.25rem;
+    text-align: center;
+}
+
+
+.inventory-heading {
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 0 2rem 0.25rem;
+    text-align: center;
+
+}
+
+.dashboard-categories {
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.132);
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    width: 100%;
+    max-width: 24rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: unset;
+    gap: 0rem;
+}
+
+.category {
+    padding-left: 0.5rem;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.category-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+h5 {
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.categorystyle1 {
+    margin-left: auto;
+    width: 6rem;
+    background-color: rgb(217, 217, 217);
+    border-radius: 20px;
+    height: 0.5rem;
+    flex: none;
+}
+
+.categorystyle2 {
+    height: 100%;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.category-span {
+
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.transectionContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0 2rem 2rem 0;
+    height: 30rem;
+    justify-content: space-between;
+}
+
+.gender-chart {
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.132);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 20rem;
+    padding: 1rem;
+    position: relative;
+
+}
+
+.gender-heading {
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 0 2rem 0.25rem;
+    text-align: center;
+}
+
+.p {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.6.34);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.transection-heading {
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 0 2rem 0.25rem;
+    text-align: center;
+
+}
+
+.transection-chart {
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.132);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 40rem;
+    padding: 1rem;
+    position: relative;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .admin-container {
+        overflow: auto;
+    }
+
+    .dashboard .widget-container,
+    .dashboard .graph-container,
+    .dashboard .transaction-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .dashboard .graph-container {
+        padding: 2rem;
+    }
+
+    .dashboard .transaction-container {
+        padding: 2rem;
+        height: unset;
+    }
+
+    .product-management {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .admin-container {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-management {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .product-management>section {
+        max-width: 400px;
+    }
+
+    .chart-container {
+        padding: 0;
+    }
+
+    .chart-container>h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .chart-container>section {
+        margin: 8rem auto;
+    }
+
+    .dashboard-app-container>section .coupon-form,
+    .dashboard-app-container>section .stopwatch {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboard-app-container>section .stopwatch {
+        align-items: center;
+    }
+}

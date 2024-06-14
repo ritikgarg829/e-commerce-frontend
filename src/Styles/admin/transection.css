@@ -1,0 +1,207 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.heading {
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    background-color: inherit;
+    border: none;
+    outline: none;
+
+}
+
+poscenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+hw {
+    height: 1rem;
+    width: 1rem;
+} */
+
+
+
+.adminContainer-transection {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1367px;
+    width: 100%;
+    margin: auto;
+}
+
+.all-transection {
+    font-size: xxx-large;
+    font-weight: 700;
+    margin: 4rem 4rem;
+    text-align: center;
+}
+
+.order-view {
+    margin: 20px;
+}
+
+.main {
+    max-height: 300px;
+    overflow: auto;
+
+}
+
+/* Scrollbar Styles */
+.main::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+.main::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the track */
+}
+
+.main::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar handle */
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the scrollbar handle on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.view {
+    background-color: #6aa2dd;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+
+}
+
+.view:hover {
+    color: blue;
+}
+
+@media screen and (max-width: 1200px) {
+    .admin-container {
+        overflow: auto;
+    }
+
+    .dashboard .widget-container,
+    .dashboard .graph-container,
+    .dashboard .transaction-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .dashboard .graph-container {
+        padding: 2rem;
+    }
+
+    .dashboard .transaction-container {
+        padding: 2rem;
+        height: unset;
+    }
+
+    .product-management {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .admin-container {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-management {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .product-management>section {
+        max-width: 400px;
+    }
+
+    .chart-container {
+        padding: 0;
+    }
+
+    .chart-container>h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .chart-container>section {
+        margin: 8rem auto;
+    }
+
+    .dashboard-app-container>section .coupon-form,
+    .dashboard-app-container>section .stopwatch {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboard-app-container>section .stopwatch {
+        align-items: center;
+    }
+}
