@@ -56,6 +56,7 @@ const App = () => {
   const hideFooterRegex = [
     /^\/admin\/management\/manageproducts\/\w+$/,
     /^\/admin\/management\/managetransections\/\w+$/,
+    /^\/ordersdetails\/\w+$/,
   ];
 
   const shouldHideFooter = hideFooterPaths.some(path => location.pathname.startsWith(path)) ||
